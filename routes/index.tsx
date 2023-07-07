@@ -7,8 +7,8 @@ export default function Home() {
       <Head>
         <title>The Denimcouch</title>
       </Head>
+      <Header active="/" />
       <main class="p-4 mx-auto max-w-screen-md">
-        <Header active="/" />
         <img
           src="/logo.svg"
           class="w-32 h-32"
