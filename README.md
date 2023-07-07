@@ -1,15 +1,17 @@
 # Fresh project
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+The Denimcouch is the blog and portfolio site for the one and only
+[Denimcouch](https://github.com/denimcouch).\
+The site is built with [Fresh](https://fresh.deno.dev/).
 
-### Usage
+## Usage
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+Make sure to install Deno:
+<https://deno.land/manual/getting_started/installation>
 
 Then start the project:
 
-```
+```ts
 deno task start
 ```
 
