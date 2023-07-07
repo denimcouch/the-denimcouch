@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import Header from "../components/Header.tsx";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         <title>The Denimcouch</title>
       </Head>
       <main class="p-4 mx-auto max-w-screen-md">
+        <Header active="/" />
         <img
           src="/logo.svg"
           class="w-32 h-32"
