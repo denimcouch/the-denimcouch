@@ -14,8 +14,8 @@ export default function Home() {
         class="p-4 text-white"
         style="background:rgba(35, 0, 80, 1);"
       >
-        <div className="mx-auto max-w-screen-lg">
-          <section id="about">
+        <div class="mx-auto max-w-screen-lg">
+          <section id="about" class="mt-8">
             <h2>About Me</h2>
           </section>
         </div>
