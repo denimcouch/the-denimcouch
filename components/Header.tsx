@@ -10,7 +10,7 @@ export default function Header({ active }: Props) {
   ];
 
   return (
-    <div class="bg-white w-full mx-auto max-w-screen-md py-6 flex flex-col md:flex-row gap-4">
+    <div class="bg-white w-full mx-auto max-w-screen-lg py-6 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
         <div class="text-2xl font-bold">
           The Denimcouch

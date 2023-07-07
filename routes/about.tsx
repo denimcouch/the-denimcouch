@@ -8,7 +8,7 @@ export default function About() {
         <title>The Denimcouch | About</title>
       </Head>
       <Header active="/about" />
-      <main class="p-4 mx-auto max-w-screen-md">
+      <main class="p-4 mx-auto max-w-screen-lg">
         <h1>About Me</h1>
         <p>Hi! I'm Alex. Nice to meet you.</p>
       </main>
