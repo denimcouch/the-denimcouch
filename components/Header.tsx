@@ -5,30 +5,35 @@ type Props = {
 export default function Header({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About", href: "/#about" },
     { name: "Blog", href: "/blog" },
   ];
 
   return (
-    <div class="bg-white w-full mx-auto max-w-screen-lg py-6 flex flex-col md:flex-row gap-4">
-      <div class="flex items-center flex-1">
-        <div class="text-2xl font-bold">
-          The Denimcouch
+    <header
+      class="w-full mx-auto py-6 sticky top-0 z-10"
+      style="background:linear-gradient(rgba(30, 0, 70, 1), rgba(0, 0, 40, 1));"
+    >
+      <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-4">
+        <div class="flex items-center flex-1">
+          <div class="text-2xl font-bold text-gray-100">
+            The Denimcouch
+          </div>
         </div>
+        <ul class="flex items-center gap-6">
+          {menus.map((menu) => (
+            <li>
+              <a
+                href={menu.href}
+                class={"text-gray-200 hover:text-gray-400 py-1 border-gray-400" +
+                  (menu.href === active ? " font-bold border-b-2" : "")}
+              >
+                {menu.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul class="flex items-center gap-6">
-        {menus.map((menu) => (
-          <li>
-            <a
-              href={menu.href}
-              class={"text-gray-500 hover:text-gray-700 py-1 border-gray-500" +
-                (menu.href === active ? " font-bold border-b-2" : "")}
-            >
-              {menu.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    </header>
   );
 }
