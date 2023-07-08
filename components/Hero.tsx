@@ -1,5 +1,5 @@
 import IconChevronDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
-import Blob from "./Blob.tsx";
+import TestBG from "../islands/TestBG.tsx";
 
 export default function Hero() {
   return (
@@ -7,7 +7,7 @@ export default function Hero() {
       class="w-full flex px-8 h-[calc(100vh-20px)] justify-center items-center flex-col gap-8 bg-cover bg-center bg-no-repeat bg-gray-100 text-white relative"
       style="background:linear-gradient(rgba(0, 0, 40, 1),rgba(35, 0, 80, 1));"
     >
-      <div className="flex flex-col justify-center items-center z-1">
+      <div className="flex flex-col justify-center items-center z-10">
         <div class="space-y-4 text-center">
           <h1 class="text-4xl inline-block font-bold">
             welcome to the denimcouch
@@ -28,9 +28,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute top-2 inset-x-1 -z-1">
-        <Blob />
-      </div>
+      {/* <Blobs /> */}
+      <TestBG />
     </div>
   );
 }
