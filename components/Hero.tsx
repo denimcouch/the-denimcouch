@@ -1,4 +1,5 @@
 import IconChevronDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
+import Blob from "./Blob.tsx";
 import TestBG from "../islands/TestBG.tsx";
 
 export default function Hero() {
@@ -27,8 +28,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      {/* <Blobs /> */}
+      {/* <Blob /> */}
       <TestBG />
     </div>
   );
