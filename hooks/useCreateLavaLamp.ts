@@ -15,7 +15,7 @@ export default function useCreateLavaLamp() {
   const lava0 = new LavaLamp(
     screen.width,
     screen.height,
-    8,
+    7,
     "#30c5d2",
     "#b57bee",
     ctx,
