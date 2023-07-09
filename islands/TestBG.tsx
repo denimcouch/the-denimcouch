@@ -1,9 +1,9 @@
 import { useEffect } from "preact/hooks";
-import createLavaLamp from "../utils/createLavaLamp.js";
+import useCreateLavaLamp from "../hooks/useCreateLavaLamp.ts";
 
 export default function TestBG() {
   useEffect(() => {
-    createLavaLamp();
+    useCreateLavaLamp();
   }, []);
 
   return (

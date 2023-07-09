@@ -28,7 +28,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      {/* <Blob /> */}
       <TestBG />
     </div>
   );
