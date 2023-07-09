@@ -3,7 +3,7 @@ import { AppProps } from "$fresh/server.ts";
 
 export default function App({ Component }: AppProps) {
   return (
-    <html class="dark">
+    <html class="dark scroll-smooth">
       <Head>
         <title>The Denimcouch</title>
       </Head>
