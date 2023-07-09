@@ -1,12 +1,16 @@
-type Props = {
+interface Props {
   active: string;
-};
+}
 
 export default function Header({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
     { name: "About", href: "/#about" },
-    { name: "Blog", href: "/blog" },
+    {
+      name: "Blog",
+      href: "https://medium.com/@alquimicacoffee",
+      target: "blank",
+    },
   ];
 
   return (
@@ -25,6 +29,7 @@ export default function Header({ active }: Props) {
             <li>
               <a
                 href={menu.href}
+                target={menu.target ?? ""}
                 class={"text-gray-200 hover:text-gray-400 py-1 border-gray-400" +
                   (menu.href === active ? " font-bold border-b-2" : "")}
               >
