@@ -7,6 +7,7 @@ import { sceneSettings } from "../utils/sceneSettings.js";
 export default function useCreateLavaLamp() {
   // canvas
   const screen = sceneSettings.screen.init("bubble", null, true);
+  // deno-lint-ignore no-explicit-any
   const ctx: CanvasRenderingContext2D | any = screen.ctx;
   screen.resize();
 
