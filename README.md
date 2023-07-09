@@ -1,6 +1,6 @@
 # Fresh project
 
-The Denimcouch is the blog and portfolio site for the one and only
+The Denimcouch is the portfolio site for the one and only
 [Denimcouch](https://github.com/denimcouch).\
 The site is built with [Fresh](https://fresh.deno.dev/).
 
