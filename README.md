@@ -1,4 +1,4 @@
-# Fresh project
+# The Denimcouch
 
 The Denimcouch is the portfolio site for the one and only
 [Denimcouch](https://github.com/denimcouch).\
