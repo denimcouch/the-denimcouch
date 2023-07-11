@@ -1,7 +1,7 @@
 import { useEffect } from "preact/hooks";
 import useCreateLavaLamp from "../hooks/useCreateLavaLamp.ts";
 
-export default function TestBG() {
+export default function LavaLampBG() {
   useEffect(() => {
     useCreateLavaLamp();
   }, []);

@@ -1,5 +1,5 @@
 import IconArrowBigDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/arrow-big-down.tsx";
-import TestBG from "../islands/TestBG.tsx";
+import LavaLampBG from "../islands/LavaLampBG.tsx";
 
 export default function Hero() {
   return (
@@ -26,7 +26,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <TestBG />
+      <LavaLampBG />
     </div>
   );
 }
