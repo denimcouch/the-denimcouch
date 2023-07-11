@@ -7,7 +7,7 @@ export default function App({ Component }: AppProps) {
       <Head>
         <title>The Denimcouch</title>
       </Head>
-      <body class="dark:(text-gray-50 bg-[rgba(20,0,60,1)]) relative min-h-screen text-gray-900">
+      <body class="dark:(text-white bg-[rgba(20,0,60,1)]) relative min-h-screen text-white flex flex-col items-stretch justify-between">
         <Component />
       </body>
     </html>

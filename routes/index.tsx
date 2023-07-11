@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
 import Hero from "../components/Hero.tsx";
 
@@ -18,6 +18,7 @@ export default function Home() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
