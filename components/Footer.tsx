@@ -1,43 +1,69 @@
 import { ComponentChildren } from "preact";
 import LemonIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/lemon-2.tsx";
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
+import IconBrandInstagram from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-instagram.tsx";
+import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
+import IconBrandMastodon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-mastodon.tsx";
+
 type Props = {
   children?: ComponentChildren;
 };
 
 export default function Footer(_props: Props) {
-  const menus = [
+  const socialLinks = [
     {
-      title: "Documentation",
-      children: [
-        { name: "Getting Started", href: "#" },
-        { name: "Guide", href: "#" },
-        { name: "API", href: "#" },
-        { name: "Showcase", href: "#" },
-        { name: "Pricing", href: "#" },
-      ],
+      name: "Instagram",
+      href: "https://www.instagram.com/_denimcouch/",
+      icon: <IconBrandInstagram />,
     },
     {
-      title: "Community",
+      name: "GitHub",
+      href: "https://github.com/denimcouch",
+      icon: <BrandGithub />,
+    },
+    {
+      name: "Mastodon",
+      href: "https://mastodon.social/@denimcouch",
+      icon: <IconBrandMastodon />,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/alexmatadev",
+      icon: <IconBrandLinkedin />,
+    },
+  ];
+  const menus = [
+    {
+      title: "Site map",
       children: [
-        { name: "Forum", href: "#" },
-        { name: "Discord", href: "#" },
+        { name: "About", href: "#about" },
+        {
+          name: "Blog",
+          href: "https://medium.com/@alquimicacoffee",
+          target: "blank",
+        },
       ],
     },
   ];
 
   return (
-    <div class="mx-auto flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 py-8 text-sm">
+    <footer class="mx-auto flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 py-8 text-sm">
       <div class="flex-1">
         <div class="flex items-center gap-1">
-          <LemonIcon class="inline-block" />
           <div class="font-bold text-2xl">
-            Fresh
+            the denimcouch
           </div>
         </div>
-        <div class="text-gray-500">
-          Full Stack Framework
-        </div>
+        {socialLinks.map((link, index) => (
+          <a
+            href={link.href}
+            class="inline-block hover:text-teal-400"
+            aria-label={link.name}
+            target="blank"
+          >
+            {link.icon}
+          </a>
+        ))}
       </div>
 
       {menus.map((item) => (
@@ -47,8 +73,9 @@ export default function Footer(_props: Props) {
             {item.children.map((child) => (
               <li class="mt-2" key={child.name}>
                 <a
-                  class="text-gray-500 hover:text-gray-700"
+                  class="text-teal-100 hover:text-teal-400"
                   href={child.href}
+                  target={child.target ?? ""}
                 >
                   {child.name}
                 </a>
@@ -58,20 +85,12 @@ export default function Footer(_props: Props) {
         </div>
       ))}
 
-      <div class="text-gray-500 space-y-2">
+      <div class="text-teal-100 space-y-2">
         <div class="text-xs">
-          Copyright © 2020 DenoLand<br />
+          Copyright © 2023 Denimcouch studios<br />
           All right reserved.
         </div>
-
-        <a
-          href="https://github.com/denoland/fresh"
-          class="inline-block hover:text-black"
-          aria-label="GitHub"
-        >
-          <BrandGithub />
-        </a>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -30,7 +30,7 @@ export default function Header({ active }: Props) {
               <a
                 href={menu.href}
                 target={menu.target ?? ""}
-                class={"text-gray-200 hover:text-gray-400 py-1 border-gray-400" +
+                class={"text-teal-100 hover:text-teal-400 py-1 border-teal-400" +
                   (menu.href === active ? " font-bold border-b-2" : "")}
               >
                 {menu.name}

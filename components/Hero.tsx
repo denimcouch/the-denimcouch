@@ -20,9 +20,9 @@ export default function Hero() {
         <div>
           <a
             href="#about"
-            class="mt-4 transition-colors bg-teal-500 text-gray-50 rounded-full cursor-pointer inline-flex items-center group px-2 py-2 hover:bg-teal-100 hover:text-gray-800"
+            class="mt-4 transition-colors text-gray-50 rounded-full cursor-pointer inline-flex items-center group px-2 py-2 hover:text-teal-400"
           >
-            <IconArrowBigDown class="inline-block w-6 h-6 transition group-hover:translate-y-0.5" />
+            <IconArrowBigDown class="motion-safe:animate-bounce inline-block w-6 h-6 transition group-hover:translate-y-0.5" />
           </a>
         </div>
       </div>
