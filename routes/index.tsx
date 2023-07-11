@@ -13,7 +13,14 @@ export default function Home() {
       >
         <div class="mx-auto max-w-screen-lg">
           <section id="about" class="mt-8">
-            <h2 class="text-3xl my-6">About Me</h2>
+            <h2 class="text-3xl text-teal-50 my-6">
+              <div className="flex flex-wrap">
+                <span>Hi, I'm Alex 👋🏽</span>
+                <span class="md:block">&nbsp;</span>
+                <span>Nice to meet you!</span>
+              </div>
+              <hr class="border-[3px] border-teal-400 my-2 rounded-lg md:w-2/3 lg:w-1/2" />
+            </h2>
             <p>Section coming soon...</p>
           </section>
         </div>
