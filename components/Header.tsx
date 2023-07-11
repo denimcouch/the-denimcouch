@@ -15,12 +15,12 @@ export default function Header({ active }: Props) {
 
   return (
     <header
-      class="w-full mx-auto py-6 sticky top-0 z-20"
+      class="w-full mx-auto py-4 px-2 md:px-4 xl:px-0 lg:py-6 sticky top-0 z-20"
       style="background:linear-gradient(rgba(30, 0, 70, 1), rgba(0, 0, 40, 1));"
     >
-      <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-4">
+      <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-1 lg:gap-4">
         <div class="flex items-center flex-1">
-          <div class="text-2xl font-bold text-gray-100">
+          <div class="text-2xl font-bold hidden md:block text-gray-100">
             The Denimcouch
           </div>
         </div>
