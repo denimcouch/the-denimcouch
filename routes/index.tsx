@@ -1,5 +1,6 @@
 import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
+import About from "../components/About.tsx";
 import Hero from "../components/Hero.tsx";
 
 export default function Home() {
@@ -8,14 +9,11 @@ export default function Home() {
       <Header active="/" />
       <Hero />
       <main
-        class="p-4 text-white"
+        class="p-4 lg:px-8 text-white"
         style="background: rgb(20, 0, 60);"
       >
         <div class="mx-auto max-w-screen-lg">
-          <section id="about" class="mt-8">
-            <h2 class="text-3xl my-6">About Me</h2>
-            <p>Section coming soon...</p>
-          </section>
+          <About />
         </div>
       </main>
       <Footer />
