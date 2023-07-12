@@ -168,7 +168,6 @@ export default class LavaLamp {
     }
   }
 
-  // renderMetaballs: param ctx is passed from initted canvas
   renderMetaballs() {
     let i = 0,
       ball;
@@ -181,8 +180,9 @@ export default class LavaLamp {
     this.ctx.beginPath();
     // compute metaballs
     i = 0;
-    //ctx.shadowBlur = 50;
-    //ctx.shadowColor = "green";
+    this.ctx.shadowBlur = 50;
+    this.ctx.shadowColor = "#30c5d2";
+    this.ctx.filter = "blur(1px)";
     while ((ball = this.balls[i++])) {
       // first cell
       let next: any[] | false = [
