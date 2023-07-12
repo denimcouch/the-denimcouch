@@ -17,7 +17,7 @@ export default function useCreateLavaLamp() {
     screen.height,
     7,
     "#30c5d2",
-    "#b57bee",
+    "#962DFF",
     ctx,
   );
 
