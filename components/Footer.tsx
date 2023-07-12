@@ -1,5 +1,4 @@
 import { ComponentChildren } from "preact";
-import LemonIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/lemon-2.tsx";
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
 import IconBrandInstagram from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-instagram.tsx";
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
@@ -47,7 +46,7 @@ export default function Footer(_props: Props) {
   ];
 
   return (
-    <footer class="mx-auto flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 py-8 text-sm">
+    <footer class="mx-auto flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 px-2 md:px-4 xl:px-0 py-8 text-sm">
       <div class="flex-1">
         <div class="flex items-center gap-1">
           <div class="font-bold text-2xl">
