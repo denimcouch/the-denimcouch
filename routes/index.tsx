@@ -9,7 +9,7 @@ export default function Home() {
       <Header active="/" />
       <Hero />
       <main
-        class="p-4 text-white"
+        class="p-4 lg:px-8 text-white"
         style="background: rgb(20, 0, 60);"
       >
         <div class="mx-auto max-w-screen-lg">
