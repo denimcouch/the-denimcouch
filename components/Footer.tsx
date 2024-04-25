@@ -13,22 +13,22 @@ export default function Footer(_props: Props) {
     {
       name: "Instagram",
       href: "https://www.instagram.com/_denimcouch/",
-      icon: <IconBrandInstagram />,
+      icon: <IconBrandInstagram size="38" />,
     },
     {
       name: "GitHub",
       href: "https://github.com/denimcouch",
-      icon: <BrandGithub />,
+      icon: <BrandGithub size="38" />,
     },
     {
       name: "Mastodon",
       href: "https://mastodon.social/@denimcouch",
-      icon: <IconBrandMastodon />,
+      icon: <IconBrandMastodon size="38" />,
     },
     {
       name: "LinkedIn",
       href: "https://linkedin.com/in/alexmatadev",
-      icon: <IconBrandLinkedin />,
+      icon: <IconBrandLinkedin size="38" />,
     },
   ];
   const menus = [
@@ -53,16 +53,18 @@ export default function Footer(_props: Props) {
             the denimcouch
           </div>
         </div>
-        {socialLinks.map((link, index) => (
-          <a
-            href={link.href}
-            class="inline-block hover:text-teal-400"
-            aria-label={link.name}
-            target="blank"
-          >
-            {link.icon}
-          </a>
-        ))}
+        <div className="flex gap-1.5">
+          {socialLinks.map((link, index) => (
+            <a
+              href={link.href}
+              class="inline-block hover:text-teal-400"
+              aria-label={link.name}
+              target="blank"
+            >
+              {link.icon}
+            </a>
+          ))}
+        </div>
       </div>
 
       {menus.map((item) => (
